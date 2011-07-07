@@ -89,6 +89,17 @@ public class ProbarTest extends TestCase {
 		});
 		assertEquals("", actual);
 	}
+	
+	public void testXXandZZ() throws Exception {
+		String actual = captureOutput(new Runnable() {
+			@Override
+			public void run() {
+				HasXXandZZ xxWithZZ = new HasXXandZZ();
+				printer.print(xxWithZZ);
+			}
+		});
+		assertEquals("", actual);
+	}
 
 	public String captureOutput(Runnable r) throws Exception {
 		PrintStream out = System.out;
