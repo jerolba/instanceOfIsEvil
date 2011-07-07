@@ -18,4 +18,4 @@ Os recuerdo que hay que QUITAR los InstanceOf, NO TRASLADARLOS a otra clase (com
 
 La clase principal a modificar es com.funius.instanceofevil.Printer, método print
 
-El ejemplo de su uso está en la clase com.funius.instanceofevil.Probar, de la rama test (aunque no es un test unitario)
+El ejemplo de su uso está en la clase com.funius.instanceofevil.Probar, de la carpeta test (aunque no es un test unitario)
