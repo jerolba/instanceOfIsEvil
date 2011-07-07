@@ -2,7 +2,6 @@ package com.funius.instanceofevil;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.nio.charset.Charset;
 
 import junit.framework.TestCase;
 
@@ -78,6 +77,11 @@ public class ProbarTest extends TestCase {
 
 					@Override
 					public void setId(String id) {
+					}
+					
+					@Override
+					public void accept(Visitor visitor) {
+						visitor.visit(this);
 					}
 				};
 				printer.print(zz);

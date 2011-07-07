@@ -1,6 +1,7 @@
 package com.funius.instanceofevil.yy;
 
 import com.funius.instanceofevil.Visible;
+import com.funius.instanceofevil.Visitor;
 import com.funius.instanceofevil.template.HasTemplate;
 
 public class HasYY implements Visible, HasTemplate {
@@ -15,6 +16,12 @@ public class HasYY implements Visible, HasTemplate {
 	public HasYY(int attr,String template){
 		this.attr=attr;
 		this.template=template;
+	}
+	
+	@Override
+	public void accept(Visitor visitor) {
+		
+		visitor.visit(this);
 	}
 
 	
