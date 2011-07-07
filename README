@@ -1,0 +1,18 @@
+Objetivo: Hay que eliminar los instanceof
+Lo único que comparten todas las clases es la interface Visible
+Para simplificar el ejemplo HasXX y HasYY son clases, pero podrían ser interfaces
+
+Restricciones: 
+	* NO PODEMOS mover la implementación de las clases __Print a las clases HasXX y HasYY
+	* Las clases que implementan Visible son POJOs y Serializables (resumiento: se puede generar un XML, JSON, etc
+	* Los métodos print son cada uno distinto, no tienen ninguno los mismos parámetros o tipos
+
+
+El primer refáctoring está claro, pero os recuerdo que hay que quitar el instanceof, no sacar lo
+que hay dentro de los ifs a otro lado :) 
+
+Hay que intentar dejar los Pojos lo más inalterados posibles, no tienen la culpa de llenarles de métodos y 
+atributos que no tienen que ver con su función, por no saber quitar el instanceof para sacarlos por pantalla.
+
+Os recuerdo que hay que QUITAR los InstanceOf, NO TRASLADARLOS a otra clase (como los __Print)
+
