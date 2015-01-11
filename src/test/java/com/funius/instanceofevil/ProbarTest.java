@@ -79,6 +79,10 @@ public class ProbarTest extends TestCase {
 					public void setId(String id) {
 					}
 					
+					@Override
+					public void accept(Visitor visitor) {
+						visitor.visit(this);
+					}
 				};
 				printer.print(zz);
 			}
